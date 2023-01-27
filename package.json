@@ -1,0 +1,15 @@
+{
+  "name": "file-utils",
+  "version": "1.0.0",
+  "description": "File utils.",
+  "author": "ihor-bielchenko",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "file-type": "^18.2.0",
+    "ioredis": "^5.2.4",
+    "pdf-export-images": "^1.0.9",
+    "pdfreader": "^3.0.0"
+  }
+}
