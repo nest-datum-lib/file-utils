@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const libre = require('libreoffice-convert');
 
 (async () => {
-	libre['convertAsync'] = util.promisify(libre.convert);
+	libre['convertAsync'] = require('util').promisify(libre.convert);
 
 	const docxBuf = await fs.promises.readFile(process.argv[2]);
 	const pdfBuf = await libre['convertAsync'](docxBuf, '.pdf', undefined);
